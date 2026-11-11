@@ -3,67 +3,59 @@
 ## Code Quality
 
 - **Refactoring**
-  - **Goal**: Improve readability and maintainability while preserving existing behavior.
-  - **Input**: Source code, programming language, and behavior that must remain unchanged.
-  - **Expected output**: Refactored code with a concise explanation of improvements.
-
+  - **Goal**: Improve readability and performance
+  - **Input**: Source function in [LANGUAGE]
+  - **Expected output**: Optimized code + explanation
 - **Style Enforcement**
-  - **Goal**: Apply consistent naming, formatting, and language-specific coding conventions.
-  - **Input**: Code block and required style guide or linting rules.
-  - **Expected output**: Revised code that follows the supplied conventions, with a summary of changes.
-
+  - **Goal**: Enforce consistent naming and formatting
+  - **Input**: Unformatted code block
+  - **Expected output**: Rewritten code with consistent style
 - **Code Review**
-  - **Goal**: Detect defects, anti-patterns, security concerns, and performance or maintainability problems.
-  - **Input**: Code snippet or pull-request diff, plus relevant requirements.
-  - **Expected output**: Prioritized findings with severity, evidence, and actionable recommendations.
+  - **Goal**: Detect potential anti-patterns and performance bottlenecks
+  - **Input**: Code snippet or pull request diff
+  - **Expected output**: Detailed review with suggested improvements
 
 ## Debugging
 
 - **Error Analysis**
-  - **Goal**: Explain an error and identify its likely root cause.
-  - **Input**: Stack trace or error message, relevant code, and reproduction details.
-  - **Expected output**: Root-cause analysis and practical resolution steps.
-
+  - **Goal**: Explain stack traces and suggest fixes
+  - **Input**: Error message and surrounding code
+  - **Expected output**: Root cause identification + solution steps
 - **Edge Case Identification**
-  - **Goal**: Find boundary conditions and unusual inputs that current logic may not handle.
-  - **Input**: Function logic, input constraints, and expected behavior.
-  - **Expected output**: Uncovered cases with example inputs and suggested handling.
-
+  - **Goal**: Find unhandled scenarios in code logic
+  - **Input**: Function logic and expected behavior
+  - **Expected output**: List of missing validations or edge cases
 - **Performance Profiling**
-  - **Goal**: Locate inefficient execution paths and excessive memory or resource use.
-  - **Input**: Relevant code, workload description, and profiling measurements or logs.
-  - **Expected output**: Bottleneck analysis, complexity considerations, and measurable optimization suggestions.
+  - **Goal**: Identify memory leaks and slow execution paths
+  - **Input**: Execution logs and algorithm logic
+  - **Expected output**: Recommendations for resource optimization
 
 ## Documentation
 
 - **Docstring Generation**
-  - **Goal**: Produce clear, consistent documentation for functions, methods, and classes.
-  - **Input**: Function or class definition and target language or documentation convention.
-  - **Expected output**: Docstring describing purpose, parameters, return values, exceptions, and relevant examples.
-
+  - **Goal**: Create standardized comments and API signatures
+  - **Input**: Function or class definition
+  - **Expected output**: Comprehensive docstrings (e.g., JSDoc, Google Python style)
 - **README File Writing**
-  - **Goal**: Create useful project documentation for developers and contributors.
-  - **Input**: Project structure, prerequisites, setup commands, configuration, and usage examples.
-  - **Expected output**: Structured README with overview, installation, configuration, usage, and contribution guidance.
-
+  - **Goal**: Produce clear project setup instructions
+  - **Input**: Project structure and setup commands
+  - **Expected output**: Structured README.md file
 - **API Documentation**
-  - **Goal**: Document API endpoints and their request and response contracts.
-  - **Input**: Route definitions, controller logic, authentication rules, and API version.
-  - **Expected output**: OpenAPI-compatible endpoint documentation with methods, parameters, request bodies, and response schemas.
+  - **Goal**: Write endpoint specifications and request/response payloads
+  - **Input**: Controller code or route definitions
+  - **Expected output**: OpenAPI/Swagger standard documentation
 
 ## Testing
 
 - **Unit Test Generation**
-  - **Goal**: Create tests that verify individual functions or components.
-  - **Input**: Target code, expected behavior, and testing framework.
-  - **Expected output**: Runnable tests for normal cases, boundary cases, and expected exceptions.
-
+  - **Goal**: Create test suites covering happy and failure paths
+  - **Input**: Target function code
+  - **Expected output**: Runnable unit test cases (e.g., pytest, Jest)
 - **Mock Data Creation**
-  - **Goal**: Generate realistic test data that conforms to a schema.
-  - **Input**: Database schema or JSON structure, constraints, and desired record count.
-  - **Expected output**: Valid sample data in the requested format, including useful value variations.
-
+  - **Goal**: Generate realistic test payloads
+  - **Input**: Database schema or JSON structure
+  - **Expected output**: Sample datasets in JSON or SQL format
 - **Integration Test Planning**
-  - **Goal**: Define tests that verify interactions between connected components or services.
-  - **Input**: System architecture, service flows, and integration requirements.
-  - **Expected output**: Ordered test plan with preconditions, steps, expected assertions, and cleanup notes.
+  - **Goal**: Outline end-to-end integration flows
+  - **Input**: System architecture and service interaction flow
+  - **Expected output**: Step-by-step integration test scenarios

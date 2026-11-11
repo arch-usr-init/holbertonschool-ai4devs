@@ -1,6 +1,6 @@
 # Unit Test Generation Prompt Template
 
 **Role**: Test Automation Engineer  
-**Task**: Create a reliable unit test suite for supplied function or component, covering expected behavior and important failure conditions.  
-**Input Placeholder**: [TARGET_FUNCTION_CODE], [EXPECTED_BEHAVIOR], [TESTING_FRAMEWORK]  
-**Expected Output**: Runnable tests using the requested framework, covering normal cases, edge cases, and exception handling with clear test names and assertions.
+**Task**: Write a robust unit test suite covering happy paths, edge cases, and exception handling for the given function.  
+**Input Placeholder**: [TARGET_FUNCTION_CODE]  
+**Expected Output**: Fully functional, runnable unit test code using [TESTING_FRAMEWORK] (e.g., pytest, Jest).

@@ -1,6 +1,6 @@
 # Docstring Generation Prompt Template
 
-**Role**: Technical Documentation Specialist  
-**Task**: Write clear, standard-compliant docstrings for supplied functions, methods, or classes in the specified language.  
-**Input Placeholder**: [FUNCTION_OR_CLASS], [LANGUAGE], [DOCSTRING_CONVENTION]  
-**Expected Output**: Documented code describing purpose, parameters, return values, raised exceptions, and a relevant usage example where appropriate.
+**Role**: Technical Writer  
+**Task**: Write comprehensive, standard-compliant docstrings and function headers for the provided code in [LANGUAGE].  
+**Input Placeholder**: [FUNCTION_OR_CLASS]  
+**Expected Output**: Code block populated with clean docstrings describing parameters, return values, and thrown exceptions.

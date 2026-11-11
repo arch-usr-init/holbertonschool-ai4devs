@@ -1,6 +1,6 @@
 # Integration Test Planning Prompt Template
 
 **Role**: Lead QA Architect  
-**Task**: Plan integration tests that verify expected interactions and data flow between dependent components or services.  
-**Input Placeholder**: [SYSTEM_ARCHITECTURE], [SERVICE_INTERACTIONS], [INTEGRATION_REQUIREMENTS]  
-**Expected Output**: Ordered integration test plan with preconditions, test data, execution steps, expected assertions, and cleanup requirements.
+**Task**: Outline end-to-end integration test scenarios to verify seamless interaction between dependent services and components.  
+**Input Placeholder**: [SYSTEM_ARCHITECTURE_FLOW]  
+**Expected Output**: Structured integration test plan listing pre-conditions, step-by-step execution flows, and expected system assertions.
