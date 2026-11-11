@@ -1,6 +1,6 @@
 # Code Review Prompt Template
 
-**Role**: Senior Software Engineer and Code Reviewer
-**Task**: Analyze the provided code for code smells, complexity, maintainability, and potential improvements.
-**Input Placeholder**: [CODE_BLOCK], [PROJECT_REQUIREMENTS]
-**Expected Output**: Prioritized review findings, explanations, and recommended improvements.
+**Role**: Principal Software Architect  
+**Task**: Review the supplied code or diff for defects, anti-patterns, security weaknesses, performance bottlenecks, and maintainability issues.  
+**Input Placeholder**: [CODE_SNIPPET_OR_DIFF], [PROJECT_REQUIREMENTS], [REVIEW_SCOPE]  
+**Expected Output**: Prioritized review report with evidence, risk severity, explanations, and concrete recommendations for each finding.

@@ -1,83 +1,61 @@
 # Prompt Patterns Library
 
-## Project Introduction
+## Introduction
 
-The Prompt Patterns Library is a collection of reusable AI prompt templates designed to support software development tasks.
+The Prompt Patterns Library contains reusable prompt templates for common software development activities. Each template defines a role, a task, the information the user must provide, and the expected response format. This structure makes prompts easier to reuse and helps produce more focused, consistent AI assistance.
 
-The project aims to improve communication with AI tools by providing structured prompts with clear roles, task descriptions, input placeholders, and expected output formats.
+## Categories
 
-These templates help developers perform common programming tasks more efficiently, consistently, and accurately.
+- **Code quality:** reviewing, refactoring, and enforcing coding conventions.
+- **Debugging:** analyzing errors, finding edge cases, and investigating performance.
+- **Documentation:** generating docstrings, API documentation, and project README files.
+- **Testing:** generating unit tests, mock data, and integration test plans.
 
-## Categories Overview
+## Prompt Templates
 
-The library is organized into four main categories:
+### Code Quality
+- [Code Review](prompts/code_review.md)
+- [Refactoring](prompts/refactoring.md)
+- [Style Enforcement](prompts/style_enforcement.md)
 
-1. **Code Quality:** Templates for improving code readability, consistency, structure, and overall quality.
-2. **Debugging:** Templates for identifying errors, diagnosing problems, fixing bugs, and detecting edge cases.
-3. **Documentation:** Templates for explaining code and generating clear technical documentation.
-4. **Testing:** Templates for generating tests, creating test cases, and analyzing test failures.
+### Debugging
+- [Error Analysis](prompts/error_analysis.md)
+- [Edge Case Identification](prompts/edge_case_identification.md)
+- [Performance Profiling](prompts/performance_profiling.md)
 
-## Templates by Category
+### Documentation
+- [API Documentation](prompts/api_documentation.md)
+- [Docstring Generation](prompts/docstring_generation.md)
+- [README File Writing](prompts/readme_file_writing.md)
 
-### 1. Code Quality
+### Testing
+- [Unit Test Generation](prompts/unit_test_generation.md)
+- [Mock Data Creation](prompts/mock_data_creation.md)
+- [Integration Test Planning](prompts/integration_test_planning.md)
 
-Templates focused on improving code structure, readability, and maintainability.
-
-- [Code Refactoring](/prompts/refactoring.md)
-- [Style Enforcement](/prompts/style_enforcement.md)
-- [Code Review](/prompts/code_review.md)
-
-### 2. Debugging
-
-Templates designed to identify, analyze, and resolve programming errors.
-
-- [Error Diagnosis](/prompts/error_diagnosis.md)
-- [Bug Fixing](/prompts/bug_fixing.md)
-- [Edge Case Detection](/prompts/edge_case_detection.md)
-
-### 3. Documentation
-
-Templates for creating and improving technical documentation.
-
-- [Function Documentation](/prompts/function_documentation.md)
-- [README Generation](/prompts/readme_generation.md)
-- [Code Explanation](/prompts/code_explanation.md)
-
-### 4. Testing
-
-Templates for validating software behavior and improving test coverage.
-
-- [Unit Test Generation](/prompts/unit_test_generation.md)
-- [Test Case Generation](/prompts/test_case_generation.md)
-- [Test Failure Analysis](/prompts/test_failure_analysis.md)
-
-## Example Usage
-
-To see practical examples of prompt templates, their inputs, AI-generated outputs, and feedback, refer to:
-
-[Prompt Testing Examples](/prompts/prompt_examples.md)
+## Supporting Documents
+- [Prompt Use Cases](prompt_use_cases.md) describes the goal, input, and expected output for each category.
+- [Prompt Testing Examples](prompt_examples.md) contains practical examples and feedback.
+- [Project Reflection](reflection.md) records lessons learned about prompt design.
 
 ## Project Structure
-
 ```text
 prompt_patterns_library/
 ├── README.md
+├── prompt_use_cases.md
+├── prompt_examples.md
+├── reflection.md
 └── prompts/
+    ├── api_documentation.md
+    ├── code_review.md
+    ├── docstring_generation.md
+    ├── edge_case_identification.md
+    ├── error_analysis.md
+    ├── integration_test_planning.md
+    ├── mock_data_creation.md
+    ├── performance_profiling.md
+    ├── readme_file_writing.md
     ├── refactoring.md
     ├── style_enforcement.md
-    ├── code_review.md
-    ├── error_diagnosis.md
-    ├── bug_fixing.md
-    ├── edge_case_detection.md
-    ├── function_documentation.md
-    ├── readme_generation.md
-    ├── code_explanation.md
-    ├── unit_test_generation.md
-    ├── test_case_generation.md
-    ├── test_failure_analysis.md
-    └── prompt_examples.md
+    └── unit_test_generation.md
 ```
-
-## Conclusion
-
-This library provides an organized collection of reusable prompt patterns for common software development activities. By categorizing templates and providing practical examples, it serves as a central reference for developers using AI-assisted development tools.

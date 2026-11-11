@@ -3,67 +3,67 @@
 ## Code Quality
 
 - **Refactoring**
-  - **Goal**: Improve code readability, maintainability, and performance without changing existing behavior.
-  - **Input**: Source code of a function or module in [LANGUAGE].
-  - **Output**: Refactored code with an explanation of the improvements.
+  - **Goal**: Improve readability and maintainability while preserving existing behavior.
+  - **Input**: Source code, programming language, and behavior that must remain unchanged.
+  - **Expected output**: Refactored code with a concise explanation of improvements.
 
 - **Style Enforcement**
-  - **Goal**: Apply consistent naming conventions, formatting, and coding standards.
-  - **Input**: A code block and the required style guidelines.
-  - **Output**: Revised code that follows the specified coding standards.
+  - **Goal**: Apply consistent naming, formatting, and language-specific coding conventions.
+  - **Input**: Code block and required style guide or linting rules.
+  - **Expected output**: Revised code that follows the supplied conventions, with a summary of changes.
 
 - **Code Review**
-  - **Goal**: Identify code smells, unnecessary complexity, and potential quality issues.
-  - **Input**: Source code of a function, class, or module.
-  - **Output**: Code review findings with recommended improvements and examples.
+  - **Goal**: Detect defects, anti-patterns, security concerns, and performance or maintainability problems.
+  - **Input**: Code snippet or pull-request diff, plus relevant requirements.
+  - **Expected output**: Prioritized findings with severity, evidence, and actionable recommendations.
 
 ## Debugging
 
-- **Error Diagnosis**
-  - **Goal**: Identify the root cause of a runtime error or unexpected behavior.
-  - **Input**: Error message, relevant source code, and steps to reproduce the issue.
-  - **Output**: Explanation of the root cause and a proposed fix.
+- **Error Analysis**
+  - **Goal**: Explain an error and identify its likely root cause.
+  - **Input**: Stack trace or error message, relevant code, and reproduction details.
+  - **Expected output**: Root-cause analysis and practical resolution steps.
 
-- **Bug Fixing**
-  - **Goal**: Correct a specific defect while preserving existing functionality.
-  - **Input**: Bug description, affected source code, and expected behavior.
-  - **Output**: Corrected code with an explanation of the changes.
+- **Edge Case Identification**
+  - **Goal**: Find boundary conditions and unusual inputs that current logic may not handle.
+  - **Input**: Function logic, input constraints, and expected behavior.
+  - **Expected output**: Uncovered cases with example inputs and suggested handling.
 
-- **Edge Case Detection**
-  - **Goal**: Discover unexpected inputs and boundary conditions that could cause failures.
-  - **Input**: Function or module source code and its intended behavior.
-  - **Output**: List of potential edge cases with examples and suggested handling strategies.
+- **Performance Profiling**
+  - **Goal**: Locate inefficient execution paths and excessive memory or resource use.
+  - **Input**: Relevant code, workload description, and profiling measurements or logs.
+  - **Expected output**: Bottleneck analysis, complexity considerations, and measurable optimization suggestions.
 
 ## Documentation
 
-- **Function Documentation**
-  - **Goal**: Generate clear documentation explaining a function's purpose, parameters, and return values.
-  - **Input**: Source code of a function in [LANGUAGE].
-  - **Output**: Documentation with a description, parameter details, return values, and usage examples.
+- **Docstring Generation**
+  - **Goal**: Produce clear, consistent documentation for functions, methods, and classes.
+  - **Input**: Function or class definition and target language or documentation convention.
+  - **Expected output**: Docstring describing purpose, parameters, return values, exceptions, and relevant examples.
 
-- **README Generation**
-  - **Goal**: Create understandable project documentation for developers and contributors.
-  - **Input**: Project structure, purpose, installation instructions, and usage information.
-  - **Output**: A structured README.md containing project overview, setup steps, and usage examples.
+- **README File Writing**
+  - **Goal**: Create useful project documentation for developers and contributors.
+  - **Input**: Project structure, prerequisites, setup commands, configuration, and usage examples.
+  - **Expected output**: Structured README with overview, installation, configuration, usage, and contribution guidance.
 
-- **Code Explanation**
-  - **Goal**: Make complex code easier to understand for developers.
-  - **Input**: A source code block or module.
-  - **Output**: A step-by-step explanation of its logic, components, and execution flow.
+- **API Documentation**
+  - **Goal**: Document API endpoints and their request and response contracts.
+  - **Input**: Route definitions, controller logic, authentication rules, and API version.
+  - **Expected output**: OpenAPI-compatible endpoint documentation with methods, parameters, request bodies, and response schemas.
 
 ## Testing
 
 - **Unit Test Generation**
-  - **Goal**: Create automated tests that verify individual functions or components.
-  - **Input**: Function source code, expected behavior, and testing framework.
-  - **Output**: Unit tests covering normal inputs, edge cases, and expected outputs.
+  - **Goal**: Create tests that verify individual functions or components.
+  - **Input**: Target code, expected behavior, and testing framework.
+  - **Expected output**: Runnable tests for normal cases, boundary cases, and expected exceptions.
 
-- **Test Case Generation**
-  - **Goal**: Identify different scenarios to validate application behavior.
-  - **Input**: Feature requirements, acceptance criteria, or function specifications.
-  - **Output**: A categorized set of test cases with inputs, expected results, and descriptions.
+- **Mock Data Creation**
+  - **Goal**: Generate realistic test data that conforms to a schema.
+  - **Input**: Database schema or JSON structure, constraints, and desired record count.
+  - **Expected output**: Valid sample data in the requested format, including useful value variations.
 
-- **Test Failure Analysis**
-  - **Goal**: Diagnose failing tests and determine whether the problem is in the implementation or the tests.
-  - **Input**: Test code, failure output, and relevant application source code.
-  - **Output**: Explanation of the failure and recommended corrections.
+- **Integration Test Planning**
+  - **Goal**: Define tests that verify interactions between connected components or services.
+  - **Input**: System architecture, service flows, and integration requirements.
+  - **Expected output**: Ordered test plan with preconditions, steps, expected assertions, and cleanup notes.

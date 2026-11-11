@@ -1,5 +1,7 @@
-<<<<<<< HEAD
-# holberton
-=======
-# holberton
->>>>>>> 52bb19f8c6db4d25679d18ee8222aa91341042a3
+# Holberton School — AI for Developers
+
+This repository contains project work for the Holberton School AI for Developers curriculum.
+
+## Project: Prompt Patterns Library
+
+The reusable prompt templates, use cases, examples, and project reflection are documented in [prompt_patterns_library](prompt_patterns_library/README.md).
