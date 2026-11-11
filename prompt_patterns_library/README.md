@@ -23,39 +23,39 @@ The library is organized into four main categories:
 
 Templates focused on improving code structure, readability, and maintainability.
 
-- [Code Refactoring](./prompts/refactoring.md)
-- [Style Enforcement](./prompts/style_enforcement.md)
-- [Code Review](./prompts/code_review.md)
+- [Code Refactoring](/prompts/refactoring.md)
+- [Style Enforcement](/prompts/style_enforcement.md)
+- [Code Review](/prompts/code_review.md)
 
 ### 2. Debugging
 
 Templates designed to identify, analyze, and resolve programming errors.
 
-- [Error Diagnosis](./prompts/error_diagnosis.md)
-- [Bug Fixing](./prompts/bug_fixing.md)
-- [Edge Case Detection](./prompts/edge_case_detection.md)
+- [Error Diagnosis](/prompts/error_diagnosis.md)
+- [Bug Fixing](/prompts/bug_fixing.md)
+- [Edge Case Detection](/prompts/edge_case_detection.md)
 
 ### 3. Documentation
 
 Templates for creating and improving technical documentation.
 
-- [Function Documentation](./prompts/function_documentation.md)
-- [README Generation](./prompts/readme_generation.md)
-- [Code Explanation](./prompts/code_explanation.md)
+- [Function Documentation](/prompts/function_documentation.md)
+- [README Generation](/prompts/readme_generation.md)
+- [Code Explanation](/prompts/code_explanation.md)
 
 ### 4. Testing
 
 Templates for validating software behavior and improving test coverage.
 
-- [Unit Test Generation](./prompts/unit_test_generation.md)
-- [Test Case Generation](./prompts/test_case_generation.md)
-- [Test Failure Analysis](./prompts/test_failure_analysis.md)
+- [Unit Test Generation](/prompts/unit_test_generation.md)
+- [Test Case Generation](/prompts/test_case_generation.md)
+- [Test Failure Analysis](/prompts/test_failure_analysis.md)
 
 ## Example Usage
 
 To see practical examples of prompt templates, their inputs, AI-generated outputs, and feedback, refer to:
 
-[Prompt Testing Examples](./prompts/prompt_examples.md)
+[Prompt Testing Examples](/prompts/prompt_examples.md)
 
 ## Project Structure
 
