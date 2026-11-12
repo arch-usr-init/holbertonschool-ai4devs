@@ -1,23 +1,22 @@
-# Function to calculate the average score of a student class
-# Intended behavior: Handle lists of numbers and return 0 for empty lists
-
-def calculate_class_average(scores):
-    """
-    Takes a list of numerical scores and computes the arithmetic mean.
-    If the list is empty, it should safely return 0.0.
-    """
-    total_score = 0
-    for score in scores:
-        total_score += score
-    
-    # Bug: Division by zero occurs when scores list is empty
-    average = total_score / len(scores)
-    return average
+"""Sum positive integers from a comma-separated string."""
 
 
-# Example usage for testing
-test_scores_1 = [85, 90, 78, 92, 88]
-test_scores_2 = []
+def sum_positive(csv_text):
+    total = 0
+    for part in csv_text.split(","):
+        part = part.strip()
+        if not part:
+            continue
+        number = int(part)
+        if number > 0
+            total += number
+    return total
 
-print("Class 1 Average:", calculate_class_average(test_scores_1))
-print("Class 2 Average:", calculate_class_average(test_scores_2))
+
+def main():
+    sample = "3, -2, 5, 0"
+    print("Positive sum:", sum_positive(sample))
+
+
+if __name__ == "__main__":
+    main()
