@@ -1,45 +1,36 @@
-# Bug Snippets — Intended Behavior
+# Bug Descriptions
 
-This collection contains five deliberately broken programs for AI-assisted debugging. Each sample is 10–40 lines long. Keep the original files unchanged for the initial debugging exercise; corrected versions will be documented separately in later tasks.
+## Bug 1 – bug1.py
+**Intended Behavior**: Read comma-separated integers, ignore non-positive values, and return the sum of positive integers. Input "3, -2, 5, 0" should produce 8.
 
-## Bug 1 — `bug1.py`
-- **Language:** Python
-- **Issue Type:** Syntax error
-- **Intended Behavior:** Read a comma-separated list of integers, ignore zero and negative values, and print the sum of positive values. For `"3, -2, 5, 0"`, the expected sum is `8`.
-- **Observed Symptom:** Python rejects the file before it can run because of invalid statement syntax.
+**Issue Type**: Syntax error.
 
-## Bug 2 — `bug2.py`
-- **Language:** Python
-- **Issue Type:** Logical error
-- **Intended Behavior:** Apply a 10% discount to `[100.0, 50.0, 30.0]` and print `[90.0, 45.0, 27.0]`.
-- **Observed Symptom:** The program runs, but its calculated prices increase instead of decreasing.
+**Notes**: The conditional statement `if number > 0` is missing a colon. Python raises SyntaxError before execution.
 
-## Bug 3 — `bug3.js`
-- **Language:** JavaScript (Node.js)
-- **Issue Type:** Runtime exception
-- **Intended Behavior:** Return the names of users with `score >= 70`, preserving input order. Expected names are `Ada` and `Lin`.
-- **Observed Symptom:** Accessing a missing nested property throws a `TypeError` during execution.
+## Bug 2 – bug2.py
+**Intended Behavior**: Apply a percentage discount to product prices. A 10% discount on [100.0, 50.0, 30.0] should return [90.0, 45.0, 27.0].
 
-## Bug 4 — `bug4.js`
-- **Language:** JavaScript (Node.js)
-- **Issue Type:** Off-by-one / loop boundary
-- **Intended Behavior:** Return the last `3` elements of `[10, 20, 30, 40, 50]` as `[30, 40, 50]`.
-- **Observed Symptom:** Only two items are returned.
+**Issue Type**: Logical error.
 
-## Bug 5 — `bug5.cpp`
-- **Language:** C++
-- **Issue Type:** Data type misuse / integer division
-- **Intended Behavior:** Compute the floating-point arithmetic mean of integer scores `[4, 4, 5]`, approximately `4.33333`.
-- **Observed Symptom:** The code compiles but prints an integer-valued average because of arithmetic conversion rules.
+**Notes**: The formula multiplies by (1 + discount_rate) instead of (1 - discount_rate), increasing prices rather than reducing them.
 
-## Suggested Reproduction Commands
+## Bug 3 – bug3.js
+**Intended Behavior**: Select users whose scores meet or exceed a minimum threshold. For a threshold of 70, return ["Ada", "Lin"].
 
-```bash
-python bug1.py              # Expected to fail during parsing
-python bug2.py              # Incorrect numerical result
-node bug3.js                # Expected to throw a TypeError
-node bug4.js                # Incorrect array length
-c++ -std=c++17 bug5.cpp -o bug5 && ./bug5  # Incorrect numerical result
-```
+**Issue Type**: Runtime exception.
 
-**Important:** Errors are intentional. Do not correct the original snippets before recording the initial AI debugging attempts.
+**Notes**: The program accesses `user.profile.score`, but the input objects store `score` directly. Accessing `score` through an undefined profile produces a TypeError.
+
+## Bug 4 – bug4.js
+**Intended Behavior**: Return the last requested number of elements from an array. For [10, 20, 30, 40, 50] and count 3, return [30, 40, 50].
+
+**Issue Type**: Off-by-one error / loop logic issue.
+
+**Notes**: The starting index uses `items.length - count + 1`, skipping the first required element. The extra +1 causes the incorrect result.
+
+## Bug 5 – bug5.cpp
+**Intended Behavior**: Calculate the floating-point arithmetic mean of integer scores. For [4, 4, 5], return approximately 4.33333.
+
+**Issue Type**: Misuse of data types / integer division.
+
+**Notes**: The division is performed using integer operands, causing truncation before conversion to double. Floating-point division is needed.
