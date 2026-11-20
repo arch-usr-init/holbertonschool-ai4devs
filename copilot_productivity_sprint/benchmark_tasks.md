@@ -25,9 +25,10 @@
 
 ## Task 3 - CSV Average Calculator
 **Requirements**: Write a function `calculate_average_age(csv_data)` that parses a string of CSV data and calculates the average age of the users.
-**Inputs**: A multi-line string representing a CSV file:
-  ```text
-  name,age
-  Alice,30
-  Bob,25
-  Charlie,35
+**Inputs**: A multi-line string representing a CSV file containing a header row (name, age) followed by user rows (e.g., Alice, 30; Bob, 25).
+**Outputs**: A float representing the average age (e.g., `30.0`), or `None` if the data is invalid or empty.
+**Acceptance Criteria**:
+- Must correctly skip the header row.
+- Must handle invalid age formats (e.g., if a row has `age="unknown"`, ignore that row for the average calculation).
+- Returns `None` if there are no valid ages to calculate.
+- Rounds the final average to two decimal places.
