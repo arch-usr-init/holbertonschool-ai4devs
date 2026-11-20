@@ -8,7 +8,6 @@ class LogAnalyzer:
             return None
         url = request_info[1]
         
-        # Status code is usually right after the quotes
         status_part = parts[2].strip().split()
         if not status_part:
             return None
