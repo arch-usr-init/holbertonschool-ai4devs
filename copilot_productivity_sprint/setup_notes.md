@@ -2,25 +2,24 @@
 
 ## 1. Development Environments (IDEs)
 - **Primary IDE:** Visual Studio Code (VS Code)
-  - Version: `1.85.x` *(replace with your actual version)*
+  - Version: 1.98.2
 - **Secondary Environment:** Antigravity
-  - Version: `Latest Stable` *(replace with your actual version)*
+  - Version: 0.1.0
 
 ## 2. AI Coding Assistants
 For this sprint, I am testing CLI-based AI assistants rather than IDE-integrated ones like GitHub Copilot. 
-
 - **AI Assistant 1:** Codex CLI
-  - Version: `0.x.x` *(replace with your actual version)*
+  - Version: 0.1.0
   - Usage: Used for terminal-based prompt generation, boilerplate code creation, and script generation.
 - **AI Assistant 2:** Claude Code CLI
-  - Version: `Latest` *(replace with your actual version)*
+  - Version: 0.2.9
   - Usage: Used for larger refactoring tasks, explaining complex code blocks, and generating unit tests directly via the terminal.
 
 ## 3. VS Code Extensions & Tooling
 To track productivity metrics (time and code changes) during the sprint, the following extensions/tools are installed:
-- **Time Tracking:** WakaTime (or built-in VS Code metrics)
+- **Time Tracking:** WakaTime
 - **Version Control:** Git / GitHub Pull Requests and Issues
-- **Testing/Linting:** *(e.g., Python, Jest, ESLint — depending on the language you are using for the benchmark tasks)*
+- **Testing/Linting:** Python, Pytest, and ESLint
 
 ## 4. Setup Process
 1. Installed and authenticated VS Code and the Antigravity environment.
@@ -30,6 +29,6 @@ To track productivity metrics (time and code changes) during the sprint, the fol
 5. Configured time-tracking mechanisms to manually record start/stop times for the benchmark tasks.
 
 ## 5. Benchmark Task Environment
-- **Language:** *(Insert language, e.g., Python 3.11 / Node.js 20)*
-- **Package Manager:** *(e.g., npm, pip, cargo)*
-- **Testing Framework:** *(e.g., pytest, Jest, Mocha)*
+- **Language:** Python 3.12 and Node.js 20
+- **Package Manager:** pip and npm
+- **Testing Framework:** pytest and Jest
