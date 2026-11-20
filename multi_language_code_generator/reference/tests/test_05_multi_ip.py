@@ -1,4 +1,4 @@
-from ..log_analyzer import LogAnalyzer
+from log_analyzer import LogAnalyzer
 def test_multi_ip():
     lines = ['1.1.1.1 - - [10/Oct] "GET / HTTP/1.1" 200 1', '2.2.2.2 - - [10/Oct] "GET / HTTP/1.1" 200 1']
     assert LogAnalyzer().analyze(lines)["unique_visitors"] == 2

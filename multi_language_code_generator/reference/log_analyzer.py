@@ -1,5 +1,7 @@
+from typing import Optional
+
 class LogAnalyzer:
-    def parse_line(self, line: str) -> dict:
+    def parse_line(self, line: str) -> Optional[dict]:
         parts = line.split('"')
         if len(parts) < 2:
             return None
