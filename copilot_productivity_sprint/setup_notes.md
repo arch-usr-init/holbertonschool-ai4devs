@@ -36,3 +36,13 @@ To track productivity metrics (time and code changes) during the sprint, the fol
 - **Language:** Python 3.12 and Node.js 20
 - **Package Manager:** pip and npm
 - **Testing Framework:** pytest and Jest
+
+## 6. Q&A (Project Questions)
+**Q: Why did you choose these specific tools for the sprint?**
+A: VS Code is my primary IDE due to its extensive extension ecosystem. I chose GitHub Copilot for inline suggestions, and CLI tools like Codex and Claude Code for terminal-based generation and refactoring.
+
+**Q: How will you ensure a fair comparison between AI and manual coding?**
+A: I have documented the exact start and end times for both sprints using WakaTime. I will use the exact same benchmark tasks and requirements for both runs to ensure the metrics are comparable.
+
+**Q: What is the business goal of this productivity sprint?**
+A: The goal is to measure the real-world impact of AI coding assistants on developer velocity and code quality, understanding both the time saved and the potential cognitive overhead.
